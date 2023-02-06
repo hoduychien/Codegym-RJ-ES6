@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class ThongTin {
+        constructor(name, desc) {
+          this.name = name;
+          this.desc = desc;
+        }
+
+        calculate(num = 1) {
+          return num * 3;
+        }
+      }
+
+      class HinhHoc extends ThongTin {
+        constructor(name, desc, width) {
+          super(name, desc);
+          this.width = width;
+        }
+        calc(b) {
+          return b * 5;
+        }
+      }
+
+      const hinhHoc = new HinhHoc("test2", "test3", 3);
+      console.log(hinhHoc);
+      console.log(hinhHoc.calc(6));
+      console.log(hinhHoc.calculate(6));
+    </script>
+  </body>
+</html>

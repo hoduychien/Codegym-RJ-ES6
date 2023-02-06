@@ -6,6 +6,8 @@ const birds = [
   { ID: "DV2", Name: "Mourning Dove", Type: "Dove" },
 ];
 
-let animal_names = birds.map((item, index) => {
-  console.log(item.ID);
+let birdId = birds.map((item) => {
+  return item.ID;
 });
+
+console.log(birdId);

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const animals = new Set();
+
+      animals.add("bear");
+      animals.add("elephants");
+      animals.add("lion");
+
+      // Kiểm tra và thêm vào danh sách
+      let animal1 = "tiger";
+      for (let animal of animals) {
+        if (animal != animal1) {
+          animals.add(animal1);
+        }
+      }
+
+      // Xóa khỏi danh sách
+      animals.delete("bear");
+
+      // hiển thị danh sách
+      for (let animal of animals) {
+        console.log(animal);
+      }
+    </script>
+  </body>
+</html>

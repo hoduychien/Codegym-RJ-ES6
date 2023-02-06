@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        constructor(name) {
+          this.name = name;
+        }
+
+        get personName() {
+          return this.name;
+        }
+
+        set personName(nameInput) {
+          this.name = nameInput;
+        }
+
+        walk() {}
+      }
+
+      class Programmer extends Person {
+        constructor(name, lang) {
+          super(name);
+          this.name = name;
+          this.lang = lang;
+        }
+
+        get personLang() {
+          return this.lang;
+        }
+
+        set personLang(nameInput) {
+          this.lang = nameInput;
+        }
+
+        writeCode() {}
+      }
+
+      let a = new Programmer("ChienDuy", "ReactJs");
+      console.log(a);
+    </script>
+  </body>
+</html>
