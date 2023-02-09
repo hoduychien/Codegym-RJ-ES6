@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Bải 1: Sử dụng callback function đơn giản
+      let greet = (name, callback) => {
+        console.log(`Hi ${name}`);
+        callback();
+      };
+
+      let callMe = () => {
+        console.log("I am callback function");
+      };
+
+      greet("Chiến", callMe);
+
+      // Bài 2: Sử dụng callback function với setTimeout()
+      let sayName = (name) => {
+        console.log(`Hello ${name}`);
+      };
+
+      setTimeout(() => {
+        console.log(`Hello world !`);
+      }, 2000);
+
+      sayName("Chiến");
+
+      // Bài 3: Sử dụng callback function để đợi kết quả của lệnh gọi hàm trước đó trước khi câu lệnh tiếp theo được thực thi
+      let greet1 = (name, callback) => {
+        console.log(`Hello world !`);
+        callback(name);
+      };
+
+      setTimeout(greet1, 2000, "Chiến", sayName);
+    </script>
+  </body>
+</html>

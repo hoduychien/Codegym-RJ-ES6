@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Bài 1: Chương trình sử dụng Promise
+      const count = true;
+      let countValue = new Promise((resolve, reject) => {
+        if (count) {
+          resolve("There is a count value.");
+        } else {
+          reject("There is no count value");
+        }
+      });
+
+      console.log(countValue);
+
+      // Bài 2: Chaining the Promise với then()
+
+      let countValue2 = new Promise((resolve, reject) => {
+        resolve("Promise resolved");
+      });
+
+      countValue2
+        .then(
+          (successValue = (result) => {
+            console.log(result);
+          })
+        )
+
+        .then(
+          (successValue1 = () => {
+            console.log("You can call multiple functions this way.");
+          })
+        );
+
+      //   Bài 3: Phương thức catch() trong JavaScript
+
+      let countValue3 = new Promise((resolve, reject) => {
+        reject("Promise rejected");
+      });
+
+      countValue3
+        .then(
+          (successValue = (result) => {
+            console.log(result);
+          })
+        )
+
+        // executes if there is an error
+        .catch(
+          (errorValue = (result) => {
+            console.log(result);
+          })
+        );
+    </script>
+  </body>
+</html>

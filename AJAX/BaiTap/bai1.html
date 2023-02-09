@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+  </head>
+  <div class="container">
+    <div class="heading">
+      <h1>GYPHY PARTY</h1>
+    </div>
+    <div class="search-bar">
+      <div class="search-box">
+        <input type="text" id="input-data" placeholder="Enter a search term" />
+      </div>
+      <button id="search-button" class="button">Search Giphy</button>
+      <button id="clear-button" class="button">Remove Images</button>
+    </div>
+
+    <div class="results" id="results"></div>
+    <div id="error">No results were found !</div>
+  </div>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js"
+      integrity="sha512-NCiXRSV460cHD9ClGDrTbTaw0muWUBf/zB/yLzJavRsPNUl9ODkUVmUHsZtKu17XknhsGlmyVoJxLg/ZQQEeGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
