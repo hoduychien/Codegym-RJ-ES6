@@ -1,0 +1,124 @@
+.container {
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.header {
+  border-bottom: 1px solid #ccc;
+  padding: 0 20px;
+  padding-top: 20px;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.search-message {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #f55050;
+  font-weight: 500;
+  display: none;
+  text-transform: capitalize;
+}
+
+.weather-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search-box {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+
+  margin-bottom: 12px;
+}
+.search-box input {
+  width: 250px;
+  padding: 0 10px;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}
+
+button.search {
+  height: 100%;
+  padding: 0 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: #48484a;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.weather-box-desc {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.weather-box-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.weather-box-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.weather-box-temperature {
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.weather-box-status {
+  text-align: center;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.weather-box-text {
+  padding: 0 20px;
+}
+.weather-box-cityname,
+.weather-box-time {
+  font-size: 13px;
+  color: #48484a;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+}
